@@ -4,7 +4,7 @@ const app = express()
 const apiRouter = require("./routes/api.js") 
 require("dotenv").config() 
 const constants = require("./constants")
-require("ejs") // required for auto setup on replit 
+const ejs = require("ejs"); 
 
 const apiLimiter = rateLimiter({
     windowMs: 1000 * 60,  
